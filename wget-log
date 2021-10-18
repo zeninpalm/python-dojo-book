@@ -1,0 +1,11 @@
+--2021-10-18 16:58:48--  https://im.indiatimes.in/content/2021/Feb/Facebook-Image-88_602a81155239d.jpg?w=725
+Resolving ctu-net-mwg.ubisoft.org (ctu-net-mwg.ubisoft.org)... 10.196.0.50
+Connecting to ctu-net-mwg.ubisoft.org (ctu-net-mwg.ubisoft.org)|10.196.0.50|:3128... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 68382 (67K) [image/jpeg]
+Saving to: ‘Facebook-Image-88_602a81155239d.jpg?w=725’
+
+               Facebook-Image   0%[                                                  ]       0  --.-KB/s               Facebook-Image-88_602a8115523 100%[=================================================>]  66.78K  --.-KB/s    in 0.08s   
+
+2021-10-18 16:58:49 (804 KB/s) - ‘Facebook-Image-88_602a81155239d.jpg?w=725’ saved [68382/68382]
+

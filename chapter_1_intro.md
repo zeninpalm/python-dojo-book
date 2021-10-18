@@ -5,7 +5,12 @@ Shhh, I'm going to tell you a secret, we have built a time machine, and you can 
 But our time machine is still not finished yet, so we can only take you back to see how a computer 
 looks like when it is invented.
 
-**todo: add a picture of those giant computers**
+```{image} ./imgs/eniac.jpg
+:alt: ENIAC Computer
+:class: bg-primary mb-1
+:width: 720px
+:align: center
+```
 
 Wow, that's a big stuff, how could that be a computer anyway? Your father's computer can be even put on his laptop. By the way, let me tell you another secret, your cell phone actually is also a computer. 
 
