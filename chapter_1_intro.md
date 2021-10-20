@@ -5,9 +5,14 @@ Shhh, I'm going to tell you a secret, we have built a time machine, and you can 
 But our time machine is still not finished yet, so we can only take you back to see how a computer 
 looks like when it is invented.
 
-**todo: add a picture of those giant computers**
+```{image} ./imgs/eniac.jpg
+:alt: ENIAC Computer
+:class: bg-primary mb-1
+:width: 720px
+:align: center
+```
 
-Wow, that's a big stuff, how could that be a computer anyway? Your father's computer can be even put on his laptop. By the way, let me tell you another secret, your cell phone actually is also a computer. 
+Wow, that's a big stuff, how could that be a computer anyway? Your mother's computer can be even put on his laptop. By the way, let me tell you another secret, your cell phone actually is also a computer. 
 
 Although it's hard to believe, but that's really how a computer looked like the past.
 A computer was extremely expensive and large in those days, only university, government or compnay can afford a computer.
@@ -15,19 +20,16 @@ Even though those computers were expensive monsters, today your cell phones can 
 That feels good to know that you have so powerful tools in your hands, right?
 
 So, how can those monsters are the same thing as your cell phone?
-That's because they have same inner structure, now let's take a loot at what's inside them,
-and don't worry, there is no blood in a computer.
+That's because they look inside all the computers, they all look same, and, they are all just like zombies!
 
-## Look inside
+## Computers are zombies
 
-Well, this is not exactly what you will see if you really tear your Mom's computer apart.
-That's because we omit a lot of details in this graph, we are learning to be a Python blackbelt,
-let's behave like a master and only pay attention to the most important things.
+I bet you've never heard this before, right? Why are computers like zombies? Let me explain it.
 
-First you will notice the creepy eyes, ears, and hands. The engineers can them inputs and outputs, or I/O devices. Don't freak out, they just work like human parts. The eyes and ears can see and hear whatever you have to say or show, and then the hands can draw a picture, sing a song, play a movie for you. 
+Look at the zombie! First you will notice the creepy eyes, ears, feet and hands. Why do they need those body parts? Because then they can see, hear and attack the suvivors, right? Eyes and ears enable the zombies to feel, and their feet and hands enable them to act in the world. The computer scientists and engineers call them inputs and outputs, or I/O devices. Every computer has I/O devices, for example keyboard, mouse, camera, printer, monitor and speaker, these devices work just like a zombie's eyes, ears, feet and hands.
 
-Then you can see there's a notebook, although technically, the engineers call it memory. Once a computer sees or hears what you have to say, it will store all the statements on the notebook , then the big brain of computer, CPU, will read from the notebook or sketch on the notebook, finally, the CPU will tell the computer what to do.
+Then you may notice that there's a notebook in the zombie's pocket. He is a zombie, he cannot remember much in his brain, so he must keep the commands given to him in the notebook, he will read every instruction on the notebook and act accordingly. Occasionally, he also writes something to the notebook in case he forget something important. The computer scientists call the notebook memory. Once a computer sees or hears what you have to say, it will store all the statements on the notebook , then the brain of computer, CPU, will read from the notebook or sketch on the notebook, finally, the CPU will tell the computer what to do.
 
-Now you notice that human brain. OMG, are computers some kinds of zombies who like to eat brains? Don't worry, they are not. That stuff which looks like brain is called central processing unit, or CPU. It has a boring name from engineers, but itis the most important part of a computer. All you need to know is that this thing just work like human brain, it can understand what you say to it and command the computer do exactly what you tell it. Pretty cool, huh?
+Finally we're looking at the zombie's brain. Yes, even zombies have brains. He use brain can understand any commands given to hime, and he will follow the command loyally. If the command is to run, the brain will tell his feet to run. If the command is to hit, the brain will tell his hands to hit. In computer science, that stuff which looks like brain is called central processing unit, or CPU. It has a boring name from engineers, but it is the most important part of a computer. All you need to know is that this thing just work like a zombie's brain, it can understand what you say to it and command the computer do exactly what you tell it. Pretty cool, huh?
 
 OK, believe it or not, these things are all it takes to be a computer. If you build these components and connect them corrrectly, boom, you got yourself a minimal computer.
