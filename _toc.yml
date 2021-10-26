@@ -6,3 +6,4 @@ root: welcome
 chapters:
 - file: chapter_1_intro
 - file: chapter_2_zombies_do_something
+- file: chapter_3_store_your_results
