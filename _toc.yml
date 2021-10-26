@@ -5,4 +5,4 @@ format: jb-book
 root: welcome
 chapters:
 - file: chapter_1_intro
-- file: notebooks
+- file: chapter_2_zombies_do_something
