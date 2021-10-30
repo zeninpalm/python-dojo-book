@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to the Python Dojo &#8212; Python Dojo</title>
+    <title>Chapter 2. Zombies, just do it &#8212; Python Dojo</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter 1. Know a little about computer" href="chapter_1_intro.html" />
+    <link rel="next" title="Chapter 3. Store your results" href="chapter_3_store_your_results.html" />
+    <link rel="prev" title="Chapter 1. Know a little about computer" href="chapter_1_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -86,31 +87,26 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="welcome.html">
    Welcome to the Python Dojo
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="chapter_1_intro.html">
    Chapter 1. Know a little about computer
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter_2_zombies_do_something.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Chapter 2. Zombies, just do it
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chapter_3_store_your_results.html">
    Chapter 3. Store your results
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapter_4_be_logical.html">
-   Chapter 4. Be logical
   </a>
  </li>
 </ul>
@@ -154,9 +150,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/welcome.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/chapter_2_zombies_do_something.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -174,7 +170,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/zeninpalm/python-dojo-book/issues/new?title=Issue%20on%20page%20%2Fwelcome.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/zeninpalm/python-dojo-book/issues/new?title=Issue%20on%20page%20%2Fchapter_2_zombies_do_something.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -190,11 +186,41 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/zeninpalm/python-dojo-book/master?urlpath=tree/docs/chapter_2_zombies_do_something.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-little-math">
+   A little math
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -203,23 +229,94 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-the-python-dojo">
-<h1>Welcome to the Python Dojo<a class="headerlink" href="#welcome-to-the-python-dojo" title="Permalink to this headline">¶</a></h1>
-<p>Welcome, I’m so glad that you put down your mobile phone and come to our dojo to
-learn programming.</p>
-<p>I know you’ve played games on your mobile phone, tablet or computers.
-And you have watched cartoon like Frozen, Zootopia or Coco.</p>
-<p>At some moment, you cannot help but ask yourself, how are the games and movies made?
-Someone may tell that they are made by computer software tools.
-But that answer is not enough, a natural question would be “How are the computer software
-tools made?”
-The answer is by programming. Someone called programmers made those fantastic software tools through programming,
-then the artists and the storytellers use those software tools to make amazing games and cartoon
-movies for us.</p>
-<p>So, in this Dojo, you will learn how those programmers work and think,
-and I will teach you the most popular tools they are utilizing.</p>
-<p>Girls, boys, welcome to the Dojo of Python, let’s train hard to earn yourself a black belt!</p>
-<div class="toctree-wrapper compound">
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-2-zombies-just-do-it">
+<h1>Chapter 2. Zombies, just do it<a class="headerlink" href="#chapter-2-zombies-just-do-it" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-little-math">
+<h2>A little math<a class="headerlink" href="#a-little-math" title="Permalink to this headline">¶</a></h2>
+<p>Congradulations, you’ve done a time travel, visited the first computer ever, and found that your computer is actually just a zombie, but don’t worry, it won’t bite!</p>
+<p>Now, it’s time to see what your zombie can do, let’s tell him to do something!</p>
+<p>I don’t know you, but I don’t like Math, I cannot calculate quickly, what about telling our zombie to do a little Math? Huh, that sounds a little cruel, but who knows, maybe our zombie likes math actually! Try yourself the cells below and see how it works.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">-</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">9</span> <span class="o">*</span> <span class="mi">9</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>81
+</pre></div>
+</div>
+</div>
+</div>
+<p>Not bad, huh? Now I believe you’ve found a way to answer every calculation question in your homework. But, I believe you won’t be only interested in numbers, let’s have some fun with characters now.</p>
+<p>Now, let’s try if we calculate on strings:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s see what we will get if we add two strings together</span>
+<span class="s2">&quot;abc&quot;</span> <span class="o">+</span> <span class="s2">&quot;def&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;abcdef&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># What about minus? multiplication? division?</span>
+<span class="c1"># They all will fail, but you&#39;re more than welcome to remove the &#39;#&#39; symbols belows and test yourself</span>
+<span class="c1"># &quot;abc&quot; - &quot;c&quot;</span>
+<span class="c1"># &quot;abc&quot; * &quot;cde&quot;</span>
+<span class="c1"># &quot;abc&quot; / &quot;def&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>I belive you have noticed that only addition is meaningful for strings. Addition really means to connect strings together. It’s quite intuitive, right? And you must have notice those scary messages when you try other operations for strings. Don’t be afraid, these errors are parts of your trainning in this Dojo, and we will teach you more about how to handle those errors. Don’t feel down if you see errors, we will see them every day, even if we become a black-belt master. They are actually friends, they will will tell us where to look and how to fix our problems, learn to love them and use them.</p>
+<p>Now let’s try printing out something in Python:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># You may let the computer say whatever you want it to say</span>
+<span class="c1"># Use this magic word &quot;print&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Welcome to Python Dojo&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello, Welcome to Python Dojo
+</pre></div>
+</div>
+</div>
+</div>
+<p>Congradulation, you’ve just spoke the magic word to Python and got youself a warm welcome message. There’s dozens of magics words in Python, these magic words represent what Python can do for you, we will meet most of them later in this Dojo. For now, let me tell you how the computer scientists call the magic words, they call them “functions”. Really a boring name :-( But the best part is this, later you may design your magic words, and combine them into bigger and more powerful magic words, you will see how powerful you could become.</p>
+<p>There is a lot more that you can do with outputs (such as including interactive outputs)
+with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
 </div>
 </div>
 
@@ -252,11 +349,20 @@ and I will teach you the most popular tools they are utilizing.</p>
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="chapter_1_intro.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Chapter 1. Know a little about computer</p>
+            </div>
+        </a>
+    </div>
      <div id="next">
-        <a class="right-next" href="chapter_1_intro.html" title="next page">
+        <a class="right-next" href="chapter_3_store_your_results.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Chapter 1. Know a little about computer</p>
+                <p class="prevnext-title">Chapter 3. Store your results</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 3. Store your results &#8212; Python Dojo</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Chapter 2. Zombies, just do it" href="chapter_2_zombies_do_something.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Python Dojo</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="welcome.html">
+   Welcome to the Python Dojo
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_1_intro.html">
+   Chapter 1. Know a little about computer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_2_zombies_do_something.html">
+   Chapter 2. Zombies, just do it
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Chapter 3. Store your results
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/chapter_3_store_your_results.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/zeninpalm/python-dojo-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/zeninpalm/python-dojo-book/issues/new?title=Issue%20on%20page%20%2Fchapter_3_store_your_results.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/zeninpalm/python-dojo-book/master?urlpath=tree/docs/chapter_3_store_your_results.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#side-note">
+   <em>
+    <strong>
+     side note
+    </strong>
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Side note
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="chapter-3-store-your-results">
+<h1>Chapter 3. Store your results<a class="headerlink" href="#chapter-3-store-your-results" title="Permalink to this headline">¶</a></h1>
+<p>Hi, look at yourself, now you already know how to do math on your computer, all you need is to type math formulas and press Enter, whoola, you will get the answer correctly.</p>
+<p>You made a solid step toward your blackbelt, now let’s move another step.</p>
+<p>Now let’s suppose that you just got the answer of the tricky question “(1 + 2) * (3 + 4) * (5 + (6 + (7 * 8)))”, and you know the answer. But your teacher asks another question, what is the value of “5 * ((1 + 2) * (3 + 4) * (5 + (6 + (7 * 8))))”? Obviously, you immediately realize that the two questions overlap with each other a lot. You don’t want to type the expression again, that’s too boring! Now what do you do?</p>
+<p>You may think, why not just use the value 1407 directly? Exactly, why not? And Python makes it even better, you don’t need to remember the value 1407 in your head, Python can remember it for you. Just like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tells Python to remember the value of this expression</span>
+<span class="c1"># And give a name to the value, here we call it &quot;result&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="p">(</span><span class="mi">6</span> <span class="o">+</span> <span class="p">(</span><span class="mi">7</span> <span class="o">*</span> <span class="mi">8</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let me explain what we did. We asks Python to calculate the expression, then store the value into the computer memory. And if you forgot it, the computer memory is just like a notebook, you may read from the notebook and you may also write to the notebook.</p>
+<p>Once you wrote the value to the notebook, how can you make sure that you can find the value again? Of course, you put a tag to indicate where the value is, right?</p>
+<p>Python does the same thing, ‘result’ the tag that Python uses to indicate where the value is, basically we’re giving a name to the value of the calculated expression, and the name is “result”. You may use any name, ‘result’, ‘value’, ‘my_value’ or ‘the_great_value_of_expression’.</p>
+<div class="section" id="side-note">
+<h2><em><strong>side note</strong></em><a class="headerlink" href="#side-note" title="Permalink to this headline">¶</a></h2>
+<p>I said you may use any name, that’s a lie! Python insists that you only use the names that Python likes. But that’s details, even if Python has some serious rules about what names are acceptable.</p>
+<p><em><strong>computer science concept</strong></em>
+The computer scientists call “result” a variable</p>
+<p>After you store a value and give it a name, you may freely use this name anywhere, you may use it in any expression, and Python will find the number value for you, you don’t need to find the value by yourself.
+Let’s see some examples, and don’t forget that ‘result’ the name of value 1407.</p>
+<p>Let’s see how to use the stored value now</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Just use the name as if you&#39;re using the literal value</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span> <span class="o">*</span> <span class="mi">123</span> <span class="o">+</span> <span class="mi">3000</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">((</span><span class="n">result</span> <span class="o">-</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1000</span><span class="o">/</span><span class="n">result</span> <span class="o">+</span> <span class="mi">1250</span><span class="p">)</span>
+
+<span class="c1"># You may also refer to the another name</span>
+<span class="n">result_1</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="n">result_2</span> <span class="o">=</span> <span class="n">result_1</span> <span class="o">-</span> <span class="mi">10</span>
+
+<span class="c1"># You may use mulitple values during calculation</span>
+<span class="n">final_result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">result_1</span> <span class="o">+</span> <span class="n">result_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>176061
+1407
+1250.7107320540156
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now you know your value could be stored, just like you may write a value onto a notebook. And you may attach a tag to where you store the value. Actully you may do much more than that.</p>
+<p>Just like you may attach the tag to another page in the notebook, you can also do so in Python. For example, we may write “result = 2407”, now the name result refers to another completely different location, and in that location, we store the value 2407.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s try it in Python</span>
+<span class="c1"># First we assign 2407</span>
+<span class="n">result_3</span> <span class="o">=</span> <span class="mi">2407</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_3</span><span class="p">)</span>
+
+<span class="c1"># Now we give result_3 to another value</span>
+<span class="n">result_3</span> <span class="o">=</span> <span class="mi">102400</span>
+<span class="c1"># Print it and check</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2407
+102400
+</pre></div>
+</div>
+</div>
+</div>
+<p>What else can we do? Emmm, what about attaching two tags to the same location? Yes, you may also do that, let’s try it now.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">1407</span>
+<span class="n">result_1</span> <span class="o">=</span> <span class="n">result</span>
+
+<span class="c1"># Print and check</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1407
+1407
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Side note<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>What do you think will happen if we run this in Python</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">1407</span>
+<span class="n">result_1</span> <span class="o">=</span> <span class="n">result</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="mi">1408</span>
+<span class="c1"># Will result_1 be 1407 or 1408? Try it? Can you explain it?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1407
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="chapter_2_zombies_do_something.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Chapter 2. Zombies, just do it</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Wei Yi<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
