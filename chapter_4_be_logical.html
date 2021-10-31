@@ -212,6 +212,26 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#meet-the-if-statment">
+   Meet the “IF” statment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#side-note">
+     Side note
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -227,6 +247,37 @@
 <p>if it rains, I should open the umbrella.
 if it doesn’t rain, I should keep the umbrella closed.</p>
 <p>Today, I’ll show you the tricks to teach your computer to do the same thing. Stay tune!</p>
+<div class="section" id="meet-the-if-statment">
+<h2>Meet the “IF” statment<a class="headerlink" href="#meet-the-if-statment" title="Permalink to this headline">¶</a></h2>
+<p>Guess what this statement does, I know you have not met this statment before, but go ahead, give it a guess.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let me ask you, what will Python print when we execute this block?</span>
+<span class="c1"># Store the value 100 somewhere in the memory, and give the name to the value</span>
+<span class="n">value</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;More than 50&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>More than 50
+</pre></div>
+</div>
+</div>
+</div>
+<p>The statement is actually quite intuitive, right? But still let me distill it for you.</p>
+<p>First, <code class="docutils literal notranslate"><span class="pre">if</span></code> is a special word in Python, it has special meaning to Python. Once Python sees the word, it knows that we are about to make a choice, and Python will expect you to tell him to what to do next.</p>
+<p>Now let’s take a look at the part <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">&gt;</span> <span class="pre">50</span></code>, this is a comparsion, you still remember this from your math classroom, right? So, this comparsion may hold or not. And if the comparsion holds, Python will execute the <code class="docutils literal notranslate"><span class="pre">print</span></code> function. (Shhh, just in case, let me tell you that we’ve seen <code class="docutils literal notranslate"><span class="pre">print</span></code> in chapter 2, feel free to turn your pages back there)</p>
+<p>So, now you can better understand this <code class="docutils literal notranslate"><span class="pre">if</span></code> statment, it works intuitively.</p>
+<p>One more thing, there is a <code class="docutils literal notranslate"><span class="pre">:</span></code> after <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">&gt;</span> <span class="pre">50</span></code>, what does it mean?</p>
+<p>This question has a long boring technical answer, but basically, you can think of <code class="docutils literal notranslate"><span class="pre">:</span></code> as telling Python to “do this”.</p>
+<div class="section" id="side-note">
+<h3>Side note<a class="headerlink" href="#side-note" title="Permalink to this headline">¶</a></h3>
+<p>If you’re really curious, the <code class="docutils literal notranslate"><span class="pre">:</span></code> is called a token, and actually Python designer may choose any token to be used. But <code class="docutils literal notranslate"><span class="pre">:</span></code> is quite easy to read and understand, I think they did a great job.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
