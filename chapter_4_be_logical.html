@@ -217,17 +217,34 @@
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#meet-the-if-statment">
-   Meet the “IF” statment
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Chapter 4. Be logical
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#side-note">
-     Side note
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#meet-the-if-statment">
+     Meet the “IF” statment
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#side-note">
+       Side note
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indent">
+   Indent
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-about-others">
+   What about others?
+  </a>
  </li>
 </ul>
 
@@ -278,6 +295,39 @@ if it doesn’t rain, I should keep the umbrella closed.</p>
 <p>If you’re really curious, the <code class="docutils literal notranslate"><span class="pre">:</span></code> is called a token, and actually Python designer may choose any token to be used. But <code class="docutils literal notranslate"><span class="pre">:</span></code> is quite easy to read and understand, I think they did a great job.</p>
 </div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="indent">
+<h1>Indent<a class="headerlink" href="#indent" title="Permalink to this headline">¶</a></h1>
+<p>Emmm, young masters, if you look really closely, you may notice one thing. We didn’t type <code class="docutils literal notranslate"><span class="pre">print(&quot;More</span> <span class="pre">than</span> <span class="pre">50&quot;)</span></code>, we typed <code class="docutils literal notranslate">&#160;&#160;&#160; <span class="pre">print(&quot;More</span> <span class="pre">than</span> <span class="pre">50&quot;)</span></code>, there’s several blank spaces before <code class="docutils literal notranslate"><span class="pre">print</span></code>, why?</p>
+<p>TODO: add an illustration here to explain indentation</p>
+<p>Well, that’s called indentation, which basically means move and make some space. Imagine a group of soliders, they are led by a brave commander, all the solider will line up behind the commander, right?</p>
+<p>Well, here the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is the commander, and the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement is the solider.
+Of course, we may add soliders as many as we want, just like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;More than 50&quot;</span><span class="p">)</span>
+    <span class="n">sixty</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">difference</span> <span class="o">=</span> <span class="n">sixty</span> <span class="o">-</span> <span class="n">value</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;How many to add in order to reach 60?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">difference</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>More than 50
+How many to add in order to reach 60?
+-40
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="what-about-others">
+<h1>What about others?<a class="headerlink" href="#what-about-others" title="Permalink to this headline">¶</a></h1>
+<p>Congradulations, now you know how to tell Python to execute statement only if some conditions are met. What if the condition is not met? Can we do something else if the condition is not met? Let’s find out the answers now!</p>
 </div>
 
     <script type="text/x-thebe-config">
