@@ -328,6 +328,45 @@ How many to add in order to reach 60?
 <div class="tex2jax_ignore mathjax_ignore section" id="what-about-others">
 <h1>What about others?<a class="headerlink" href="#what-about-others" title="Permalink to this headline">¶</a></h1>
 <p>Congradulations, now you know how to tell Python to execute statement only if some conditions are met. What if the condition is not met? Can we do something else if the condition is not met? Let’s find out the answers now!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="c1"># Guess what will Python say?</span>
+<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;More than 50&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Less than 50&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>More than 50
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is quite intuitive, right? Bascially, we are just saying “if this, do these, otherwise, do those.”</p>
+<p>Well, what if we don’t write an <code class="docutils literal notranslate"><span class="pre">else</span></code>  part? In that case, Python won’t do anything at all if the condition doesn’t hold.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;More than 50&quot;</span><span class="p">)</span>
+
+<span class="c1"># This will be printed anyway</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After if&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>After if
+</pre></div>
+</div>
+</div>
+</div>
+<p>As you can see, Python will do nothing if the condition is not met.</p>
 </div>
 
     <script type="text/x-thebe-config">
